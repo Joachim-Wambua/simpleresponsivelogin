@@ -1,9 +1,18 @@
 <?php
-
-    $databaseHost = 'localhost';
-    $databaseName = 'security_task';
-    $databaseUsername = 'root'; 
-    $databasePassword = '112358'; 
-    $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
-    
+    $host='localhost';
+    $dbUsername='root';
+    $dbName = 'security_task';
+    $dbPassword='112358';
+    $conn=mysqli_connect($host,$dbUsername,$dbPassword,"$dbName");
+    try
+    {
+        $con=new PDO("mysql:host=$host;dbname=$dbName",$dbUsername,$dbPassword);
+        $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        //echo 'connected';
+    }
+    catch(PDOException $e)
+    {
+        echo '<br>'.$e->getMessage();
+    }
+     
 ?>

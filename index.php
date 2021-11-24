@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <!-- Forgot Password Area -->
-                <a href="/login.html">Have an Account? LogIn</a>
+                <a href="/login.php">Have an Account? LogIn</a>
                 <input type="submit" class="button" name="submit" value="Register">
             </form>
         </div>

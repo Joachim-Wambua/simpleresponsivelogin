@@ -15,13 +15,17 @@
     <body>
         <!-- Left Screen Column -->
         <div class="column">
-            <a href="table1.php">
-                <input type="submit" class="button" name="submit" value="Table 1">
-            </a>
+            <form action="dashboard.php" method="post" enctype="multipart/form-data">
+                <h2>Welcome</h2>
+                <br>
 
-            <a href="table2.php">
-                <input type="submit" class="button" name="submit" value="Table 2">
-            </a>
+                    <?php
+                        session_start();
+                        include 'registration.php';
+                    ?>
+                <p class="hint-text"><br><b>Welcome </b><?php echo $_SESSION["username"] ?></p>
+                <div class="text-center">Sign Out Here? <br><a href="logout.php">Logout</a></div>
+            </form>
         </div>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
