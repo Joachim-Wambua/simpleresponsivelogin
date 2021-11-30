@@ -12,7 +12,7 @@
 		if($stmt->rowCount()>0){
 			$_SESSION['username'] = $username;
 			header("location: dashboard.php");
-			$_SESSION['success'] = "You are logged in";
+			$_SESSION['success'] = "<script type='text/javascript'>alert('You are Logged In!')</script>";
 		}
 		else{
 			header("location: login.php");
@@ -21,3 +21,4 @@
 		
 	}
 ?>
+

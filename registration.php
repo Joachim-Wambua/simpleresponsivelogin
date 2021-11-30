@@ -13,7 +13,7 @@
 		$data_db = $connect_db->prepare("INSERT INTO users(name, email, password) VALUES(?, ?, ?)");
 		$data_db->bind_param("sss", $username, $email, $userpassword);
 		$data_db->execute();
-		echo "You have successfully registered an account.";
+		// echo "<script type='text/javascript'>alert('You have successfully registered an account!')</script>";
 		$data_db->close();
 		$connect_db->close();
 

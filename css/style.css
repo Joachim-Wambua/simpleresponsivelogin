@@ -8,6 +8,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+li a {
+    padding-left: 30px;
+    text-decoration: none!important;
+    font-size: 15px;
+}
+ 
 .column {
     width: 100vw;
     height: 100vh;
@@ -61,6 +67,14 @@ form h2 {
     border-bottom: 2px solid #d9d9d9; 
 }
 
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/books.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    padding: 100px;
+  }
+
 .login-form:after, .login-form:before{
     content: '';
     position: absolute;
@@ -73,6 +87,11 @@ form h2 {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+}
+
+.card {
+    background-color: #f2f2f2!important;
+    border: transparent!important;
 }
 
 .login-form:after {
