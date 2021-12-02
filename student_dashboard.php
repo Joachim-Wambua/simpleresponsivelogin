@@ -3,7 +3,7 @@
     <!-- Starting Header Area -->
     <head>
         <!-- Webpage Title -->
-        <title>Librarian Dashboard</title>
+        <title>Student Profile</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -36,14 +36,14 @@
                     <li class="active"><a href="#">Profile Settings</a></li>
                 </ul>
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                    <li><a href="logout.php"><span class="fas fa-sign-out-alt"></span> LogOut</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Left Screen Column -->
         
 
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron student jumbotron-fluid">
             <?php
                 session_start();
                 include 'registration.php';
@@ -51,7 +51,7 @@
 
             <div class="container">
                 <h1 class="display-4 text-white font-weight-bold" >The Online Library</h1>
-                <p class="lead font-weight-bold text-white">Welcome to your librarian account, <?php echo $_SESSION["username"] ?></p>
+                <p class="lead font-weight-bold text-white">Welcome to your student account, <?php echo $_SESSION["username"] ?></p>
 
             </div>
         </div>
@@ -59,59 +59,78 @@
         <div class="text-center p-2"><h3>Available Books</h3></div>
 
         <!-- Book Cards -->
-        <div class="column" >
-            <div class="card mb-1 p-2">
+        <div class="container column" >
+            <div class="card mb-1 p-2 mx-auto">
                 <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">The Alchemist</h5>
+                    <h5 class="card-title text-center">The Alchemist</h5>
                     <p class="card-text">This is supporting text giving a brief description of the book.</p>
-                    <a href="#" class="btn btn-primary">Record</a>
-                    <a href="#" class="btn btn-primary">Update</a>
-                    <a href="#" class="btn btn-primary">Lend</a>
-                    <a href="#" class="btn btn-primary">Delete</a>
-                    <a href="#" class="btn btn-primary">Read</a>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
                 </div>
             </div>
 
-            <div class="card mb-1 p-2">
+            <div class="card mb-1 p-2 mx-auto">
+                <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title text-center">The Alchemist</h5>
+                    <p class="card-text text-center">This is supporting text giving a brief description of the book.</p>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
+                </div>
+            </div>
+
+            <div class="card mb-1 p-2 mx-auto">
+                <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title text-center">The Alchemist</h5>
+                    <p class="card-text">This is supporting text giving a brief description of the book.</p>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
+                </div>
+            </div>
+
+            <div class="card mb-1 p-3 mx-auto">
                 <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">The Alchemist</h5>
                     <p class="card-text">This is supporting text giving a brief description of the book.</p>
-                    <a href="#" class="btn btn-primary">Record</a>
-                    <a href="#" class="btn btn-primary">Update</a>
-                    <a href="#" class="btn btn-primary">Lend</a>
-                    <a href="#" class="btn btn-primary">Delete</a>
-                    <a href="#" class="btn btn-primary">Read</a>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
+
+
                 </div>
             </div>
 
-            <div class="card mb-1 p-2">
+            <div class="card mb-1 p-3 mx-auto">
                 <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">The Alchemist</h5>
                     <p class="card-text">This is supporting text giving a brief description of the book.</p>
-                    <a href="#" class="btn btn-primary">Record</a>
-                    <a href="#" class="btn btn-primary">Update</a>
-                    <a href="#" class="btn btn-primary">Lend</a>
-                    <a href="#" class="btn btn-primary">Delete</a>
-                    <a href="#" class="btn btn-primary">Read</a>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
+
+
                 </div>
             </div>
 
-            <div class="card mb-1 p-3">
+            <div class="card mb-1 p-3 mx-auto">
                 <img class="card-img-top w-25 mx-auto" src="assets/alchemist.png" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">The Alchemist</h5>
                     <p class="card-text">This is supporting text giving a brief description of the book.</p>
-                    <a href="#" class="btn btn-primary">Record</a>
-                    <a href="#" class="btn btn-primary">Update</a>
-                    <a href="#" class="btn btn-primary">Lend</a>
-                    <a href="#" class="btn btn-primary">Delete</a>
-                    <a href="#" class="btn btn-primary">Read</a>
+                    <a href="#" class="btn btn-primary">View Book</a>
+                    <a href="#" class="btn btn-primary">Borrow Book</a>
+                    <a href="#" class="btn btn-primary">Return Book</a>
 
 
                 </div>
+            </div>
             </div>
         </div>
 

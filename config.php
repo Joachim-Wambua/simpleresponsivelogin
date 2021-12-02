@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $host='localhost';
     $dbUsername='root';
     $dbName = 'security_task';
