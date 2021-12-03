@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <!-- jQuery + Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
 
     <!-- Website Body -->
@@ -20,7 +23,7 @@
             </div>
         <!-- Right Screen Column -->
         <div class="login-area">
-            <form action="registration.php" class="alt" method="post">
+            <form action="successpage.php" class="alt" method="post">
                 <img class="avatar" src="assets/Profile Avatar.png">
                 <h2>Welcome</h2>
                 <!-- Log In Form -->
@@ -55,7 +58,7 @@
                     </div>
                 </div>
                 <!-- Forgot Password Area -->
-                <a href="/login.php">Have an Account? LogIn</a>
+                <a href="successpage.php">Have an Account? LogIn</a>
                 <input type="submit" class="button" name="submit" value="Register">
             </form>
         </div>

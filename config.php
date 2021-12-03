@@ -1,9 +1,9 @@
 <?php
     session_start();
     $host='localhost';
-    $dbUsername='root';
+    $dbUsername='Zubrah';
     $dbName = 'security_task';
-    $dbPassword='112358';
+    $dbPassword='P@ss123';
     $conn=mysqli_connect($host,$dbUsername,$dbPassword,"$dbName");
     try
     {

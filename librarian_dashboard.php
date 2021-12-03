@@ -36,7 +36,7 @@
                     <li class="active"><a href="#">Profile Settings</a></li>
                 </ul>
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="logout.php"><span class="fas fa-sign-out-alt"></span> LogOut</a></li>
+                    <li><a href="/logout.php"><span class="fas fa-sign-out-alt"></span> LogOut</a></li>
                 </ul>
             </div>
         </nav>
